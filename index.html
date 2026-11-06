@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Shanaaa 💗</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: linear-gradient(145deg,#fff0f5,#f0e6ff,#fff5ed);
+  color: #805b78;
+  text-align: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 65px 20px;
+}
+
+h1 {
+  font-size: clamp(35px,9vw,55px);
+  color: #d47fa7;
+  margin-bottom: 18px;
+}
+
+h2 {
+  color: #bc83b8;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  padding: 14px 27px;
+  border-radius: 30px;
+  background: #e8a8c7;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px #dca4c755;
+  margin: 12px;
+}
+
+button:active {
+  transform: scale(.95);
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.subtitle {
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 25px;
+  color: #b68aaa;
+}
+
+.gift {
+  font-size: 110px;
+  cursor: pointer;
+  display: inline-block;
+  animation: bounce 1.5s infinite;
+  filter: drop-shadow(0 10px 12px #d99ab866);
+}
+
+@keyframes bounce {
+  0%,100% {transform: translateY(0) rotate(-3deg);}
+  50% {transform: translateY(-16px) rotate(3deg);}
+}
+
+.hidden {
+  display: none !important;
+}
+
+.reveal {
+  animation: appear 1s ease;
+}
+
+@keyframes appear {
+  from {opacity:0; transform:translateY(25px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+.card {
+  background: #ffffffb9;
+  max-width: 550px;
+  margin: 20px auto;
+  padding: 30px 23px;
+  border-radius: 25px;
+  box-shadow: 0 8px 30px #cda9c522;
+  border: 1px solid #fff;
+}
+
+.flower {
+  font-size: 32px;
+  margin: 12px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 12px;
+  max-width: 500px;
+  margin: 25px auto;
+}
+
+.photo {
+  min-height: 145px;
+  border-radius: 18px;
+  background: linear-gradient(135deg,#f9d8e9,#e9dafa,#ffeadf);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  overflow: hidden;
+  color: #a9789e;
+  font-size: 14px;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  min-height: 145px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.letter {
+  font-family: Georgia,serif;
+  line-height: 2;
+  font-size: 17px;
+  text-align: left;
+}
+
+.cake {
+  font-size: 100px;
+  margin: 15px;
+  animation: bounce 2s infinite;
+}
+
+.heart {
+  position: fixed;
+  bottom: -30px;
+  pointer-events: none;
+  animation: floatUp 6s linear forwards;
+  z-index: 5;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+footer {
+  padding: 35px 15px;
+  font-size: 14px;
+  color: #b58ba8;
+}
+</style>
+</head>
+
+<body>
+
+<!-- FIRST SCREEN -->
+
+<div class="hero" id="welcome">
+  <div class="subtitle">A LITTLE SURPRISE MADE WITH LOVE</div>
+
+  <div class="flower">🌷 ✨ 🦋</div>
+
+  <h1>Hey Shanaaa!</h1>
+
+  <p>
+    Someone has prepared something special<br>
+    just for you...
+  </p>
+
+  <div class="gift" onclick="openGift()">🎁</div>
+
+  <p>Tap your little gift to open it 💗</p>
+</div>
+
+<!-- BIRTHDAY SURPRISE -->
+
+<div id="surprise" class="hidden">
+
+  <section class="reveal">
+    <div class="flower">🦋 🌸 ✨</div>
+
+    <p class="subtitle">TODAY IS ALL ABOUT YOU</p>
+
+    <h1>Happy Birthday<br>Shanaaa! 💗</h1>
+
+    <p>
+      A little world of happiness,<br>
+      made especially for you.
+    </p>
+
+    <div class="flower">🌷 🤍 🌷</div>
+  </section>
+
+  <!-- BIRTHDAY MESSAGE -->
+
+  <section>
+    <div class="card">
+      <h2>Dear Shanaaa 💌</h2>
+
+      <p class="letter">
+        Happy Birthday to someone who holds
+        a very special place in my heart! 🥹<br><br>
+
+        Life is so much more beautiful with
+        you in it. I hope your days are filled
+        with laughter, your heart with peace,
+        and your life with endless happiness.<br><br>
+
+        May all your little dreams come true.
+        May you always find reasons to smile,
+        even on the difficult days.<br><br>
+
+        Never forget how special you are
+        and how much you are loved. 💗<br><br>
+
+        Keep shining, keep smiling and
+        always be your beautiful self!
+        You deserve all the happiness in
+        this world. 🌸
+        <br><br>
+        With lots and lots of love,<br>
+        Someone who loves you! 💕
+      </p>
+    </div>
+  </section>
+
+  <!-- MEMORIES -->
+
+  <section>
+    <h2>Little Moments, Big Memories 📸</h2>
+
+    <p>
+      Every little moment deserves
+      a special place in our hearts.
+    </p>
+
+    <div class="gallery">
+      <div class="photo">🌸 Your favourite memory 1</div>
+      <div class="photo">💗 Your favourite memory 2</div>
+      <div class="photo">🦋 Your favourite memory 3</div>
+      <div class="photo">✨ Your favourite memory 4</div>
+    </div>
+
+    <p style="font-size:13px">
+      Our memories are the prettiest pictures. 🤍
+    </p>
+  </section>
+
+  <!-- CAKE -->
+
+  <section>
+    <div class="card">
+      <h2>Make a Birthday Wish! 🎂</h2>
+
+      <div class="cake" id="cake">🎂</div>
+
+      <p id="wishText">
+        Close your eyes and make a wish! ✨
+      </p>
+
+      <button onclick="blowCandles()">
+        Blow the candles 🕯️
+      </button>
+    </div>
+  </section>
+
+  <!-- FINAL SURPRISE -->
+
+  <section>
+    <div class="card">
+      <h2>One Last Little Surprise 💝</h2>
+
+      <p>
+        If you ever forget how special you are,
+        come back here and remember...
+      </p>
+
+      <button onclick="finalSurprise()">
+        Open your final surprise 💗
+      </button>
+
+      <h2 id="finalMessage" class="hidden reveal"
+          style="margin-top:25px">
+        You are loved more than words can say! 🥹💗
+        <br><br>
+        Happy Birthday, Shanaaa! 🌷
+      </h2>
+    </div>
+  </section>
+
+  <footer>
+    Made with endless love 💗<br>
+    A little birthday universe just for Shanaaa ✨
+  </footer>
+
+</div>
+
+<script>
+function openGift() {
+  document.getElementById("welcome").classList.add("hidden");
+
+  const surprise = document.getElementById("surprise");
+  surprise.classList.remove("hidden");
+
+  window.scrollTo(0,0);
+  surprise.classList.add("reveal");
+
+  for(let i=0;i<25;i++) {
+    setTimeout(createHeart,i*120);
+  }
+}
+
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+
+  const symbols = ["💗","💕","🌸","✨","🦋","💖"];
+  heart.textContent =
+    symbols[Math.floor(Math.random()*symbols.length)];
+
+  heart.style.left = Math.random()*100 + "vw";
+  heart.style.fontSize = (15+Math.random()*20) + "px";
+  heart.style.animationDuration = (4+Math.random()*4) + "s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(()=>heart.remove(),8000);
+}
+
+function blowCandles() {
+  document.getElementById("cake").textContent = "🍰";
+  document.getElementById("wishText").textContent =
+    "May your biggest wishes come true, Shanaaa! ✨💗";
+
+  for(let i=0;i<20;i++) {
+    setTimeout(createHeart,i*100);
+  }
+}
+
+function finalSurprise() {
+  document.getElementById("finalMessage")
+    .classList.remove("hidden");
+
+  for(let i=0;i<30;i++) {
+    setTimeout(createHeart,i*100);
+  }
+}
+</script>
+
+</body>
+  </html>
+  
